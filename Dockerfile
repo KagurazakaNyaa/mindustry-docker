@@ -6,4 +6,5 @@ ADD https://github.com/Anuken/Mindustry/releases/download/${MINDUSTRY_VERSION}/s
 EXPOSE 6567/tcp 6567/udp
 VOLUME [ "/data" ]
 WORKDIR /data
-CMD ["java", "-jar", "/app/server-release.jar", "host"]
+ENTRYPOINT ["java", "-jar", "/app/server-release.jar"]
+CMD [ "host" ]
