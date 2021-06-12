@@ -1,0 +1,13 @@
+version: "3.3"
+
+services:
+  server:
+    build: .
+    image: kagurazakanyaa/mindustry:latest
+    network_mode: bridge
+    restart: unless-stopped
+    ports:
+      - 6567:6567/tcp
+      - 6567:6567/udp
+    volumes:
+      - "./data:/data"
