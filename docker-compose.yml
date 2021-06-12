@@ -4,6 +4,8 @@ services:
   server:
     build: .
     image: kagurazakanyaa/mindustry:latest
+    tty: true
+    stdin_open: true
     network_mode: bridge
     restart: unless-stopped
     ports:
