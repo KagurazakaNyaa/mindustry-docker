@@ -1,5 +1,5 @@
 FROM adoptopenjdk:11-jre-hotspot
-ENV MINDUSTRY_VERSION v126.2
+ENV MINDUSTRY_VERSION v140.3
 RUN mkdir /app
 RUN mkdir /data
 ADD https://github.com/Anuken/Mindustry/releases/download/${MINDUSTRY_VERSION}/server-release.jar /app
