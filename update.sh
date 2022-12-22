@@ -1,6 +1,7 @@
 #!/bin/bash
 version=$(curl --silent "https://api.github.com/repos/Anuken/Mindustry/releases/latest" | grep -Po '"tag_name": "\K.*?(?=")')
 currentversion=$(cat currentversion)
+echo "currentversion:$currentversion version:$version"
 echo $version > currentversion
 if [[ "$currentversion" == "$version" ]]; then
     exit
