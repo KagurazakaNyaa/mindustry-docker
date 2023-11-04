@@ -8,8 +8,8 @@ if [[ "$currentversion" == "$version" ]]; then
 fi
 sed -i 's/^ENV MINDUSTRY_VERSION.*$/ENV MINDUSTRY_VERSION '$version'/i' Dockerfile
 date > timestamp
-git config user.name github-actions
-git config user.email github-actions@github.com
+git config user.name "github-actions[bot]"
+git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 git add timestamp
 git add currentversion
 git commit -a -m "Auto Update to Mindustry "$version
