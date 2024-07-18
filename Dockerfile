@@ -1,4 +1,4 @@
-FROM adoptopenjdk:11-jre-hotspot
+FROM eclipse-temurin:21
 ENV MINDUSTRY_VERSION v146
 RUN mkdir /app
 RUN mkdir /data
