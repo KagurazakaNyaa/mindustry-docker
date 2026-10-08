@@ -1,5 +1,5 @@
 FROM eclipse-temurin:21
-ENV MINDUSTRY_VERSION v160.6
+ENV MINDUSTRY_VERSION v160.7
 RUN mkdir /app
 RUN mkdir /data
 ADD https://github.com/Anuken/Mindustry/releases/download/${MINDUSTRY_VERSION}/server-release.jar /app
